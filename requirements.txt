@@ -1,0 +1,22 @@
+# Core agent framework
+langchain>=0.3
+langchain-core>=0.3
+langgraph>=0.2
+langchain-ollama>=0.2
+langchain-openai>=0.2
+langchain-anthropic>=0.3
+
+# Paper parsing
+PyMuPDF>=1.23
+PyPDF2>=3.0
+
+# Tool dependencies (all CPU / lightweight)
+arxiv>=2.0
+biopython>=1.83
+requests>=2.31
+beautifulsoup4>=4.12
+googlesearch-python>=1.2
+
+# Utilities
+python-dotenv>=1.0
+pydantic>=2.6
