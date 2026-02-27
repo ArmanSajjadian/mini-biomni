@@ -21,8 +21,12 @@ cd mini-biomni
 python3 -m venv .venv
 source .venv/bin/activate
 
-# 3. Install
-pip install -e .
+# 3. Install (upgrade pip first — servers often ship an old version)
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# Optional: editable install (adds the `nano-biomni` CLI command)
+# pip install -e .
 
 # 4. Configure
 cp .env.example .env
