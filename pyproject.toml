@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "nano-biomni"
 version = "0.1.0"
 description = "Standalone biomedical research agent — adapts Biomni's ReAct loop for paper replication"
-requires-python = ">=3.11"
+requires-python = ">=3.8"
 dependencies = [
     "langchain>=0.3",
     "langchain-core>=0.3",

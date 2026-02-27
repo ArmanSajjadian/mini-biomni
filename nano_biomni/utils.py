@@ -14,7 +14,7 @@ import sys
 import traceback
 from contextlib import redirect_stderr, redirect_stdout
 from functools import wraps
-from typing import Any
+from typing import Any, Dict, List
 
 from langchain_core.messages import AIMessage, BaseMessage, ToolMessage
 from langchain_core.tools import StructuredTool
@@ -159,8 +159,8 @@ def api_schema_to_langchain_tool(api_schema: dict, module_name: str) -> Structur
         "int": int,
         "boolean": bool,
         "bool": bool,
-        "List[str]": list[str],
-        "List[int]": list[int],
+        "List[str]": List[str],
+        "List[int]": List[int],
         "Dict": dict,
         "Any": Any,
     }
